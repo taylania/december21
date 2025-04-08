@@ -1,42 +1,50 @@
 <html>
 <head>
   <style>
-       h1 {text-align: center;
-         font-family: 'Brush Script MT', cursive;}
-      h2 {text-align: center;
-         font-family: 'Brush Script MT', cursive;}
+    h1 {
+      text-align: center;
+      font-family: 'Brush Script MT', cursive;
+    }
+    h2 {
+      text-align: center;
+      font-family: 'Brush Script MT', cursive;
+    }
 
-{
-  box-sizing: border-box;
-}
+    /* Global reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 100%; /* Should be removed. Only for demonstration */
-}
+    /* Flexbox layout for the row */
+    .row {
+      display: flex;
+      justify-content: center; /* Centers the columns */
+      gap: 20px; /* Adds space between the columns */
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Styling for each column */
+    .column {
+      width: 45%; /* Takes up 45% of the row */
+      padding: 10px;
+    }
   </style>
 </head>
-  <body>
-    <h1>Menu</h1>
- <div class="row">
-  <div class="column"></div>
-   <h2>Drinks</h2>
-   <h3>Coffee</h3>
-   <p>Dreamy Bunny Coffee<br>Sweet Vanilla Cappuccino<br></p>
-   <h3>Tea</h3>
-   <p>Dreaming Lavender Matcha<br>Sleeping Beauty Osmanthus Tea<br>Calming Jasmine Tea</p>
-  <div class="column"></div>
-   <h2>Desserts</h2>
-</div>
-  </body>
+<body>
+  <h1>Menu</h1>
+  <div class="row">
+    <div class="column">
+      <h2>Drinks</h2>
+      <h3>Coffee</h3>
+      <p>Dreamy Bunny Coffee<br>Sweet Vanilla Cappuccino<br></p>
+      <h3>Tea</h3>
+      <p>Dreaming Lavender Matcha<br>Sleeping Beauty Osmanthus Tea<br>Calming Jasmine Tea</p>
+    </div>
+    <div class="column">
+      <h2>Desserts</h2>
+      <p>Sweet Dream Tiramisu<br>Lovely Vanilla Parfait<br>Darling Princess Chocolate Cake</p>
+    </div>
+  </div>
+</body>
 </html>
