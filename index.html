@@ -3,18 +3,31 @@
   <style>
        h1 {text-align: center;
          font-family: 'Brush Script MT', cursive;}
+
+    {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   </style>
 </head>
   <body>
     <h1>Menu</h1>
-   <p>Drinks
-Dreamy Bunny Coffee
-Bunny Cocoa
-Dreaming Lavender Matcha
-
-Treats
-Sweet dream tiramisu
-Lovely vanilla parfait
-</p>
+ <div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
   </body>
 </html>
